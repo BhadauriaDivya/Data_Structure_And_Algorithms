@@ -12,6 +12,7 @@ void createemptynode(node **head){
 }
 void traverse(node *head){
     while(head!=NULL){
+        
         printf("%d \n",head->info);
         head=head->next;
     }

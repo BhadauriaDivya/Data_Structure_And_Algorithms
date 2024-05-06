@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<conio.h>
- 
+
 typedef struct link{
     int info;
     struct link *next;
@@ -35,7 +35,7 @@ void insertatbeg (node **head,int item){
 int main(){
     node *head;    
 
-    createemptynode(&head);
+        createemptynode(&head);
 
         insertatbeg(&head,5);
         insertatbeg(&head,15);

@@ -77,10 +77,10 @@ node *start=NULL,*last=NULL;
             insertatend(&start,&last,75);
             insertatend(&start,&last,43);
             insertatend(&start,&last,21);
-    
+
             
-            // deleteatbeg(&start);
-            // deleteatend(&start,&last);
+            deleteatbeg(&start);
+            deleteatend(&start,&last);
     traverse(start);
     return 0;
 }

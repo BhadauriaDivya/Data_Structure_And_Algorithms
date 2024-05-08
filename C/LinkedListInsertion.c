@@ -69,6 +69,28 @@ void insertatposition(node **start,int after,int item){
     t->next=nn;
     }
 }
+void search(node **start,int item){
+    // int item;
+    // printf("Enter item to search");
+    // scanf("%d",&item);
+    node *t=*start;
+    if(*start!=NULL)
+    {
+        int flag,i=0;
+            while(t!=NULL){
+                if(t->info==item){
+                    printf("Item Found At Position %d\n",i+1);
+                    flag=0;
+                }
+                else{
+                    flag=1;
+                }
+                i++;
+                t=t->next;
+            }
+    }
+}
+
 
 int main(){
     node *head=NULL, *last=NULL;
@@ -80,6 +102,8 @@ int main(){
         insertatposition(&head,4,345432);
 
         insertatend(&head,&last,200);
+
+        search(&head,5);
 
         printf("Traverse\n");
         printf("\n");

@@ -22,6 +22,7 @@ void inversetraverse(node *head){
     printf("%d \n",head->info);
     // printf("\nexiting");
 }
+
 void insertatbeg (node **head,node **last,int item){
     node *ptr=(node*)malloc(sizeof(node));
     ptr->info=item;
@@ -69,6 +70,7 @@ void insertatposition(node **start,int after,int item){
     t->next=nn;
     }
 }
+
 void search(node **start,int item){
     // int item;
     // printf("Enter item to search");
@@ -90,7 +92,6 @@ void search(node **start,int item){
             }
     }
 }
-
 
 int main(){
     node *head=NULL, *last=NULL;

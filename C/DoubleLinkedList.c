@@ -36,8 +36,6 @@ void insertatbeg(node **start, node **last,int item){
     }
 }
 
-
-
 void insertatend(node **start,node **last,int item){
     node *nn=(node*)malloc(sizeof(node));
     nn->info=item;
@@ -78,7 +76,6 @@ node *start=NULL,*last=NULL;
             insertatend(&start,&last,43);
             insertatend(&start,&last,21);
 
-            
             deleteatbeg(&start);
             deleteatend(&start,&last);
     traverse(start);

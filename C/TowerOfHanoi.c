@@ -12,6 +12,7 @@ int hanoi(int peg1,int peg2,int peg3,int n){
         hanoi(peg2,peg1,peg3,n-1);
     }
 }
+
 int main(){
     char peg1='p';
     char peg2='q';

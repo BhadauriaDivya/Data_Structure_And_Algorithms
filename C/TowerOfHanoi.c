@@ -18,8 +18,10 @@ int main(){
     char peg2='q';
     char peg3='r';
     int n;
+    
     printf("Enter number of disk:\n");
     scanf("%d",&n);
+    
     hanoi(peg1,peg2,peg3,n);
     return 0;
 }

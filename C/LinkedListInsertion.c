@@ -90,6 +90,9 @@ void search(node **start,int item){
                 i++;
                 t=t->next;
             }
+            if(flag=1){
+                printf("Item Not Found\n");
+            }
     }
 }
 

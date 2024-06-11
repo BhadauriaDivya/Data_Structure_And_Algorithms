@@ -1,5 +1,5 @@
 #include<stdio.h>
-int Q[10];
+int Q[10]; 
 int F=-1;
 int R=-1;
 

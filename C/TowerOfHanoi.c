@@ -1,4 +1,5 @@
 #include<stdio.h>
+
 int hanoi(int peg1,int peg2,int peg3,int n){
     if(n<=0){
         printf("Not Possible");

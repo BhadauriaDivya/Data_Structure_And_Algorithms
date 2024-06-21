@@ -50,7 +50,6 @@ void deleteatposition(node **start,int pos){
     free(p);
 }
 
-
 void deleteatend(node **start){
     if(*start!=NULL){
         node *t=*start,*p;

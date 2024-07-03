@@ -12,7 +12,6 @@ int partition(int a[], int low, int high)
     int pivot = a[low];
     int left = low + 1;
     int right = high;
-
     while (left <= right)
     {
         while (left <= right && a[left] <= pivot)

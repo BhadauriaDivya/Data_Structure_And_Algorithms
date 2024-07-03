@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 int binarysearch(int arr[],int start,int end,int value){
-    while(start<=end){    
+    while(start<=end){
     int mid=(start+end)/2;
         if(arr[mid]==value){
             return mid;

@@ -2,9 +2,9 @@
 
 void swap(int *a, int *b)
 {
-    int t = *a;
-    *a = *b;
-    *b = t;
+    int t=*a;
+    *a=*b;
+    *b=t;
 }
 
 int partition(int a[], int low, int high)

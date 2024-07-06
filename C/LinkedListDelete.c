@@ -56,7 +56,7 @@ void deleteatend(node **start){
         while(t->next->next!=NULL){
             t=t->next;
         }
-        // p=(*start)->next;
+        //p=(*start)->next;
         p=t->next;
         t->next=NULL;
         free(p);

@@ -62,12 +62,10 @@ int main()
 	insert(root, 70);
 	insert(root, 60);
 	insert(root, 80);
-	
 	preorder(root);
 	printf("\n");
 	inorder(root);
 	printf("\n");
 	postorder(root);
-	
 	return 0;
 }

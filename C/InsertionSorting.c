@@ -2,18 +2,17 @@
 #include<stdlib.h>
 
 void InsertionSort(int arr[],int n){
-    int i, key, j;
-    for (i = 1; i < n; i++) 
+    int i,key,j;
+    for (i=1;i<n;i++) 
     {
-        key = arr[i];
-        j = i - 1;
-
-        while (j >= 0 && arr[j] > key) 
+        key=arr[i];
+        j=i-1;
+        while(j>=0 && arr[j]>key) 
         {
-            arr[j + 1] = arr[j];
-            j = j - 1;
+            arr[j+1]=arr[j];
+            j=j-1;
         }
-        arr[j + 1] = key;
+        arr[j+1]=key;
     }
 }
 

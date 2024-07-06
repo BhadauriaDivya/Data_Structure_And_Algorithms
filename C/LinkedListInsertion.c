@@ -58,11 +58,8 @@ void insertatend(node **start,node **last,int item){
 void insertatposition(node **start,int after,int item){
     node *nn=(node*)malloc(sizeof(node));
     nn->info=item;
-
     if(*start!=NULL){
-
     node *t=*start;
-
     for(int i=1;i<after-1;i++){
         t=t->next;
     }
@@ -79,20 +76,20 @@ void search(node **start,int item){
     if(*start!=NULL)
     {
         int flag,i=0;
-            while(t!=NULL){
-                if(t->info==item){
-                    printf("Item Found At Position %d\n",i+1);
-                    flag=0;
-                }
-                else{
-                    flag=1;
-                }
-                i++;
-                t=t->next;
+        while(t!=NULL){
+            if(t->info==item){
+                printf("Item Found At Position %d\n",i+1);
+                flag=0;
             }
-            if(flag=1){
-                printf("Item Not Found\n");
+            else{
+                flag=1;
             }
+            i++;
+            t=t->next;
+        }
+        if(flag=1){
+            printf("Item Not Found\n");
+        }
     }
 }
 

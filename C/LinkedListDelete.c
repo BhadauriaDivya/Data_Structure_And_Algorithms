@@ -56,10 +56,10 @@ void deleteatend(node **start){
         while(t->next->next!=NULL){
             t=t->next;
         }
-        //p=(*start)->next;
-        p=t->next;
-        t->next=NULL;
-        free(p);
+    //p=(*start)->next;
+    p=t->next;
+    t->next=NULL;
+    free(p);
     }
 }
 
@@ -84,5 +84,5 @@ int main(){
         printf("Traverse\n");
         printf("\n");
         traverse(head);
-        return 0;
+    return 0;
 }

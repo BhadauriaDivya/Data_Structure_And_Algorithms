@@ -13,7 +13,7 @@ new* newNode(int item)
 	nn->left = nn->right = NULL;
 	return nn;
 }
-
+ 
 void inorder(new* root)
 {
 	if (root != NULL) {
@@ -22,7 +22,7 @@ void inorder(new* root)
 		inorder(root->right);
 	}
 }
-
+  
 void preorder(new* root)
 {
 	if (root != NULL) {

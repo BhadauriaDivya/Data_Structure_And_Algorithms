@@ -33,7 +33,7 @@ void insertatbeg (node **head,node **last,int item){
     else{
         ptr->next=*head;
         *head=ptr;
-    }
+    } 
     *last=ptr;
 }
 

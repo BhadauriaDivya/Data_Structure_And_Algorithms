@@ -6,7 +6,7 @@ typedef struct link{
     int info;
     struct link *prev, *next;
 }node;
-
+  
 void traverse(node *head){
     if(head==NULL){
         printf("List is empty");
@@ -20,7 +20,7 @@ void traverse(node *head){
     }
     printf("\nexiting");
 }
-
+  
 void insertatbeg(node **start, node **last,int item){
     node *nn=(node*)malloc(sizeof(node));
     nn->info=item;
@@ -35,7 +35,7 @@ void insertatbeg(node **start, node **last,int item){
         *start=nn;
     }
 }
-
+  
 void insertatend(node **start,node **last,int item){
     node *nn=(node*)malloc(sizeof(node));
     nn->info=item;
@@ -52,20 +52,20 @@ void insertatend(node **start,node **last,int item){
         printf("List is empty");
     }
 }
-
+  
 void deleteatbeg(node **start){
     node *t=*start;
     (t->next)->prev=NULL;
     *start=t->next;
     free(t);
 } 
-
+   
 void deleteatend(node **start,node **last){
     node *t=*last;
     (t->prev)->next=NULL;
     free(t);
 }
-
+   
 int main(){
 node *start=NULL,*last=NULL;
             insertatbeg(&start,&last,5);

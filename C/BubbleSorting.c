@@ -12,7 +12,7 @@ void BubbleSort(int arr[],int n){
         }
     }
 }
-
+  
 int main(){
     int arr[]={34,25,76,65,23,43,67,47,57,45};
     int n=sizeof(arr)/sizeof(arr[0]);

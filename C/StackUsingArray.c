@@ -1,7 +1,7 @@
 #include <stdio.h>   
 int stack[100],i,j,choice=0,n,top=-1;  
-  
-void push ()  
+
+void push ()
 {  
     int val;
     if (top == n )   {
@@ -16,7 +16,7 @@ void push ()
     }   
 }   
   
-void pop ()   
+void pop ()
 {   
     if(top == -1)   {
         printf("Underflow");
@@ -25,7 +25,7 @@ void pop ()
         top = top -1;   
     }  
 }   
-void show()  
+void show()
 {  
     for (i=top;i>=0;i--)  
     {  
@@ -37,7 +37,7 @@ void show()
     }  
 }  
 
-void main ()  
+void main ()
 {  
     printf("Enter the number of elements in the stack ");   
     scanf("%d",&n);  
@@ -45,7 +45,7 @@ void main ()
    while(choice != 4)  
     {  
         printf("Chose one from the below options \n");  
-        printf("\n1.Push\n2.Pop\n3.Show\n4.Exit");  
+        printf("\n1.Push \n2.Pop \n3.Show \n4.Exit");  
         printf("\n Enter your choice \n");        
         scanf("%d",&choice);  
         switch(choice)  

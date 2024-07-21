@@ -4,36 +4,37 @@ int stack[100],i,j,choice=0,n,top=-1;
 void push ()
 {  
     int val;
-    if (top == n )   {
-        printf("\n Overflow");   
+    if (top == n)
+    {
+     printf("\n Overflow");   
     }
-    else  
-    {  
-        printf("Enter the value?");  
-        scanf("%d",&val);         
-        top = top +1;   
-        stack[top] = val;   
-    }   
-}   
+    else
+    {
+     printf("Enter the value?");  
+     scanf("%d",&val);         
+     top = top +1;   
+     stack[top] = val;   
+    }
+}
   
 void pop ()
 {   
     if(top == -1)   {
-        printf("Underflow");
+     printf("Underflow");
     }  
     else{
-        top = top -1;   
+     top=top-1;   
     }  
 }   
 void show()
 {  
-    for (i=top;i>=0;i--)  
+    for(i=top;i>=0;i--)  
     {  
-        printf("%d\n",stack[i]);  
+     printf("%d\n",stack[i]);  
     }  
     if(top == -1)   
     {  
-        printf("Stack is empty");  
+     printf("Stack is empty");  
     }  
 }  
 

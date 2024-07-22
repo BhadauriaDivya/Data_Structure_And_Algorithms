@@ -5,7 +5,7 @@ typedef struct node {
 	int key;
 	struct node *left, *right;
 }new;
-   
+
 new* newNode(int item)
 {
 	new* nn= (new*)malloc(sizeof(new));
@@ -13,7 +13,7 @@ new* newNode(int item)
 	nn->left = nn->right = NULL;
 	return nn;
 }
-   
+
 void inorder(new* root)
 {
 	if (root != NULL) {
@@ -22,7 +22,7 @@ void inorder(new* root)
 		inorder(root->right);
 	}
 }
-   
+
 void preorder(new* root)
 {
 	if (root != NULL) {
@@ -31,7 +31,7 @@ void preorder(new* root)
 		preorder(root->right);
 	}
 }
-  
+
 void postorder(new* root)
 {
 	if (root != NULL) {
@@ -40,7 +40,7 @@ void postorder(new* root)
 		printf("%d ", root->key);
 	}
 }
-  
+
 new* insert(new* node, int key)
 {
 	if (node == NULL)
@@ -51,7 +51,7 @@ new* insert(new* node, int key)
 		node->right = insert(node->right, key);
 	return node;
 }
-  
+
 int main()
 {
 	new* root = NULL;

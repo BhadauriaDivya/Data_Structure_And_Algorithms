@@ -8,6 +8,7 @@ void push ()
     {
      printf("\n Overflow");
     }
+
     else
     {
      printf("Enter the value?");
@@ -17,7 +18,7 @@ void push ()
     }
 }
 
-void pop ()
+void pop()
 {   
     if(top == -1){
      printf("Underflow");
@@ -39,7 +40,7 @@ void show()
     }  
 }
 
-void main ()
+void main()
 {  
     printf("Enter the number of elements in the stack ");
     scanf("%d",&n);
@@ -74,7 +75,7 @@ void main ()
             }
             default:  
             {
-                printf("Please Enter valid choice ");  
+                printf("Please Enter valid choice ");
             }
         }
     }

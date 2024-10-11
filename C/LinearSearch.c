@@ -15,8 +15,14 @@ int search(int arr[], int N, int x)
 int main(void)
 {
     int arr[] = {2,3,4,5,6,7,8,9,10,20,30,40,50};
-    int N = sizeof(arr) / sizeof(arr[0]);
-    int result = search(arr, N, 30);
+    int n = sizeof(arr) / sizeof(arr[0]);
+    // int n;
+    // scanf("%d",&n);
+    // int arr[n];
+    // for(int i=0;i<n;i++){
+    //     scanf("%d",&arr[i]);
+    // }
+    int result = search(arr, n, 30);
     if (result==-1){
             printf("Element is not present in array");
     }
